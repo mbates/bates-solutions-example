@@ -1,0 +1,26 @@
+apiVersion: skaffold/v4beta3
+kind: Config
+manifests:
+  rawYaml:
+    - ./infrastructure/k8s/*
+    - ./infrastructure/k8s-local/*
+build:
+  local:
+    push: true
+  artifacts:
+    - image: batessolutions/profile-example
+      context: example
+      docker:
+        dockerfile: Dockerfile
+      sync:
+        manual:
+          - src: "src/**/*.ts"
+            dest: .
+    # - image: batessolutions/profile-client
+    #   context: client
+    #   docker:
+    #     dockerfile: Dockerfile
+    #   sync:
+    #     manual:
+    #       - src: "**/*.js"
+    #         dest: .
