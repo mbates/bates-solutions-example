@@ -1,5 +1,7 @@
 export enum Subjects {
-  Example = "example",
+  Example = 'example',
+  FooBar = 'foo:bar',
+
   //   TicketUpdated = "ticket:updated",
 
   //   OrderCreated = "order:created",
