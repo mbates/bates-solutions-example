@@ -8,19 +8,11 @@ build:
   local:
     push: true
   artifacts:
-    - image: batessolutions/profile-example
+    - image: batessolutions/example
       context: example
       docker:
         dockerfile: Dockerfile
       sync:
         manual:
-          - src: "src/**/*.ts"
+          - src: 'src/**/*.ts'
             dest: .
-    # - image: batessolutions/profile-client
-    #   context: client
-    #   docker:
-    #     dockerfile: Dockerfile
-    #   sync:
-    #     manual:
-    #       - src: "**/*.js"
-    #         dest: .
