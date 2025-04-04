@@ -3,11 +3,11 @@ kind: Ingress
 metadata:
   name: ingress-service
   annotations:
-    nginx.ingress.kubernetes.io/use-regex: "true"
+    nginx.ingress.kubernetes.io/use-regex: 'true'
 spec:
   ingressClassName: nginx
   rules:
-    - host: profile.local
+    - host: example.local
       http:
         paths:
           - path: /api/example/?(.*)

@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: example
-          image: batessolutions/profile-example
+          image: batessolutions/example
           env:
             - name: NATS_CLUSTER_ID
               value: profile
@@ -23,9 +23,9 @@ spec:
                 fieldRef:
                   fieldPath: metadata.name
             - name: NATS_URL
-              value: "http://nats-srv:4222"
+              value: 'http://nats-srv:4222'
             - name: MONGO_URI
-              value: "mongodb://example-mongo-srv:27017/example"
+              value: 'mongodb://example-mongo-srv:27017/example'
             - name: JWT_KEY
               valueFrom:
                 secretKeyRef:
