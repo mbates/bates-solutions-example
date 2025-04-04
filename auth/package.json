@@ -19,7 +19,7 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": "",
+  "description": "Simple authentication service",
   "dependencies": {
     "@bates-solutions/common": "^1.10.0",
     "@bates-solutions/common-example": "^1.0.5",
