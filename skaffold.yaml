@@ -8,6 +8,14 @@ build:
   local:
     push: true
   artifacts:
+    - image: batessolutions/example-auth
+      context: auth
+      docker:
+        dockerfile: Dockerfile
+      sync:
+        manual:
+          - src: 'src/**/*.ts'
+            dest: .
     - image: batessolutions/example
       context: example
       docker:
