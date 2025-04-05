@@ -51,6 +51,14 @@ N/A
 {}
 ```
 
+You should also see these messages logged in the `skaffold` terminal
+
+```
+[sample-service] MessageReceived example example-service
+[sample-service] I should do some stuff with Status.Active and Status.Deleted active deleted
+[sample-service] EventPublished example
+```
+
 **Response when not authenticated**
 
 ```
