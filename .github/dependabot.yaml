@@ -1,14 +1,10 @@
 version: 2
 updates:
   - package-ecosystem: "npm"
-    directory: "/example"
+    directory: "/auth"
     schedule:
       interval: "weekly"
   - package-ecosystem: "docker"
-    directory: "/example"
-    schedule:
-      interval: "weekly"
-  - package-ecosystem: "npm"
-    directory: "/common"
+    directory: "/sample-service"
     schedule:
       interval: "weekly"
