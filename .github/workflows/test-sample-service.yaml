@@ -1,0 +1,14 @@
+name: test-sample-service
+
+on:
+  pull_request:
+    paths:
+      - 'sample-service/**'
+
+jobs:
+  build:
+    name: Test sample-service
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: cd sample-service && npm ci && npm run test:ci
