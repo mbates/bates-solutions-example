@@ -6,7 +6,7 @@ This monorepo contains 2 projects, [auth](./auth/README.md) & [sample-service](.
 
 Before you can skaffold the cluster, these projects need to be setup with `npm i`.
 
-## Hosts files
+## Hosts File
 
 For local development add a local loopback to your computers hosts file
 
@@ -28,11 +28,15 @@ This project is setup to run inside a Kubernetes Cluster.
 
 https://kubernetes.io/docs/home/
 
-If you have Docker Desktop installed you can use that to run a local cluster.
+If you have Docker Desktop installed you can use that to run a local cluster. All you need to do is enable it in Settings.
 
 https://www.docker.com/get-started/
 
+https://docs.docker.com/desktop/features/kubernetes/
+
 Once Docker Desktop is setup, the cluster can be stared with `skaffold dev` (see above)
+
+### Terminal Setup
 
 Install `kubectl` to manage things from your terminal
 
