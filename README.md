@@ -6,6 +6,11 @@ This monorepo contains 2 projects, [auth](./auth/README.md) & [sample-service](.
 
 Before you can skaffold the cluster, these projects need to be setup with `npm i`.
 
+This repository is part of a this simple microservices example group:
+ * [Microservices : Monorepo Example](https://github.com/mbates/bates-solutions-example)
+ * [Microservices : Example Common Components](https://github.com/mbates/bates-solutions-example-common)
+ * [Microservices : Global Common Components](https://github.com/mbates/bates-solutions-common)
+
 ## Hosts File
 
 For local development add a local loopback to your computers hosts file
