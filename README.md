@@ -39,9 +39,9 @@ You will need an account on https://hub.docker.com/
 
 Once your account is setup run `docker login` at the terminal to allow `docker push`
 
-### Github / Docker authentication for Actions
+## Github Actions
 
-Add authentication to https://github.com/[ACCOUNT]/[REPO]/settings/secrets/actions
+If you fork, add this authentication to https://github.com/[ACCOUNT]/[REPO]/settings/secrets/actions
 
 - Add `DOCKER_USERNAME` as a repository action variable
 - Add `DOCKER_PASSWORD` as a repository action secret
