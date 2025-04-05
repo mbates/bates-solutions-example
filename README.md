@@ -1,4 +1,4 @@
-# Microservices : Monorepo Example
+# Microservices : Example Monorepo
 
 Microservices Application built with TypeScript, Express, Nats and Mongo
 
@@ -7,7 +7,7 @@ This monorepo contains 2 projects, [auth](./auth/README.md) & [sample-service](.
 Before you can skaffold the cluster, these projects need to be setup with `npm i`.
 
 This repository is part of a this simple microservices example group:
- * [Microservices : Monorepo Example](https://github.com/mbates/bates-solutions-example)
+ * [Microservices : Example Monorepo](https://github.com/mbates/bates-solutions-example)
  * [Microservices : Example Common Components](https://github.com/mbates/bates-solutions-example-common)
  * [Microservices : Global Common Components](https://github.com/mbates/bates-solutions-common)
 
