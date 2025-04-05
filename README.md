@@ -39,7 +39,7 @@ You will need an account on https://hub.docker.com/
 
 Once your account is setup run `docker login` at the terminal to allow `docker push`
 
-### Github / Docker authentication
+### Github / Docker authentication for Actions
 
 Add authentication to https://github.com/[ACCOUNT]/[REPO]/settings/secrets/actions
 
@@ -56,7 +56,7 @@ If you have Docker Desktop installed you can use that to run a local cluster.
 
 https://www.docker.com/get-started/
 
-Once setup the cluster can be stared with `skaffold dev` (see above)
+Once Docker Desktop is setup, the cluster can be stared with `skaffold dev` (see above)
 
 ### Pods
 
