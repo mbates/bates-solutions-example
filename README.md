@@ -135,8 +135,8 @@ If you want to use this to start your own project, you'll also need to fork the 
 
 Once forked, update the npm and docker hub account names throughout the codebases, replacing:
 
-- `@bates-solutions` with your own npm account. Replace in all package.json files and all `import` lines in typescript files.
-- `batessolutions` with your own docker hub account. Replace in `package.json` scripts, `infrastructure/k8s/*.depl` files and main `skaffold.yam`l file
+- `@bates-solutions` with your own npm account. Replace in all `package.json` dependencies and all `import` lines in typescript files.
+- `batessolutions` with your own docker hub account. Replace in `package.json` scripts, `infrastructure/k8s/*.depl` files and main `skaffold.yaml` file
 
 ### Docker authentication
 
@@ -153,5 +153,5 @@ These are needed for your repo's Actions https://github.com/[ACCOUNT]/[REPO]/set
 
 ## Acknowledgement
 
-The patterns I used here, and a lot of my understanding of these topics were learned in this execellent course https://www.udemy.com/course/microservices-with-node-js-and-react
+The patterns I used here, and a lot of my understanding of these topics were learned in this excellent course https://www.udemy.com/course/microservices-with-node-js-and-react
 
