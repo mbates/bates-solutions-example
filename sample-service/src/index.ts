@@ -1,6 +1,6 @@
 import { app } from './app';
 import { natsWrapper } from './nats-wrapper';
-import { FooListener } from './events/listeners/foo-listener';
+import { ExampleListener } from './events/listeners/example-listener';
 
 const start = async () => {
   if (!process.env.JWT_KEY) {
@@ -29,7 +29,7 @@ const start = async () => {
     process.on('SIGIT', () => natsWrapper.client.close());
     process.on('SIGTERM', () => natsWrapper.client.close());
 
-    new FooListener(natsWrapper.client).listen();
+    new ExampleListener(natsWrapper.client).listen();
 
     // await mongoose.connect(process.env.MONGO_URI);
     // console.log('Connected to MongoDb');

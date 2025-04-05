@@ -16,8 +16,8 @@ build:
         manual:
           - src: 'src/**/*.ts'
             dest: .
-    - image: batessolutions/example-service
-      context: service
+    - image: batessolutions/example-sample-service
+      context: sample-service
       docker:
         dockerfile: Dockerfile
       sync:

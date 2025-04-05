@@ -2,7 +2,7 @@ import express, { Request, Response } from 'express';
 
 const router = express.Router();
 
-router.get('/api/example', async (req: Request, res: Response) => {
+router.get('/api/sample', async (req: Request, res: Response) => {
   res.send({});
 });
 

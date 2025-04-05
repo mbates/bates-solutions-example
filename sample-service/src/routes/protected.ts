@@ -4,7 +4,7 @@ import { requireAuth } from '@bates-solutions/common';
 const router = express.Router();
 
 router.get(
-  '/api/example/protected',
+  '/api/sample/protected',
   requireAuth,
   async (req: Request, res: Response) => {
     res.send({});
