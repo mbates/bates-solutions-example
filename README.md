@@ -2,22 +2,9 @@
 
 Microservices Application built with TypeScript, Express, Nats and Mongo
 
-## Forking
-
-If you want to use this to start your own project, you'll also need to fork the accompanying npm repository https://github.com/mbates/bates-solutions-example-common
-
-Once forked, update the npm and docker hub account names throughout the 2 codebases replacing:
-
-- `@bates-solutions` with your own npm account. Replace in all package.json files and all `import` lines in typescript files.
-- `batessolutions` with your own docker hub account. Replace in `package.json` scripts, `infrastructure/k8s/*.depl` files and main `skaffold.yam`l file
-
-## Monorepo
-
 This monorepo contains 2 projects, [auth](./auth/README.md) & [sample-service](./sample-service/README.md).
 
 Before you can skaffold the cluster, these projects need to be setup with `npm i`.
-
-(If you fork and use this on your own project, you will be publishing to you own docker hub. Make sure you are not using `batessolutions/example-xxxx` for you container names. You can publish with `npm run publish` once you've updated to your own account)
 
 ## Hosts files
 
@@ -32,19 +19,6 @@ This project uses skaffold to manage the kubernetes cluster locally.
 See https://skaffold.dev for installation instructions.
 
 `skaffold dev` from project root to bring up the project.
-
-## Docker authentication
-
-You will need an account on https://hub.docker.com/
-
-Once your account is setup run `docker login` at the terminal to allow `docker push`
-
-## Github Actions
-
-If you fork, add this authentication to https://github.com/[ACCOUNT]/[REPO]/settings/secrets/actions
-
-- Add `DOCKER_USERNAME` as a repository action variable
-- Add `DOCKER_PASSWORD` as a repository action secret
 
 ## Kubernetes
 
@@ -146,3 +120,25 @@ If you get a Nats error like this when you run `skaffold dev`
 ```
 
 It is caused by sample service starting before Nats. Use docker desktop to delete the `k8s_sample-service_sample-service-depl-xxxx` container. It will restart and should connect to Nats successfully.
+
+## Forking
+
+If you want to use this to start your own project, you'll also need to fork the accompanying npm repository https://github.com/mbates/bates-solutions-example-common
+
+Once forked, update the npm and docker hub account names throughout the 2 codebases replacing:
+
+- `@bates-solutions` with your own npm account. Replace in all package.json files and all `import` lines in typescript files.
+- `batessolutions` with your own docker hub account. Replace in `package.json` scripts, `infrastructure/k8s/*.depl` files and main `skaffold.yam`l file
+
+### Docker authentication
+
+You will need an account on https://hub.docker.com/
+
+Once your account is setup run `docker login` at the terminal to allow `docker push`
+
+### Github Actions
+
+If you fork, add this authentication to https://github.com/[ACCOUNT]/[REPO]/settings/secrets/actions
+
+- Add `DOCKER_USERNAME` as a repository action variable
+- Add `DOCKER_PASSWORD` as a repository action secret
