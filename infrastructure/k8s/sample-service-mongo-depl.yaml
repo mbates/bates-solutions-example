@@ -1,28 +1,28 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: example-mongo-depl
+  name: sample-service-mongo-depl
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: example-mongo
+      app: sample-service-mongo
   template:
     metadata:
       labels:
-        app: example-mongo
+        app: sample-service-mongo
     spec:
       containers:
-        - name: example-mongo
+        - name: sample-service-mongo
           image: mongo
 ---
 apiVersion: v1
 kind: Service
 metadata:
-  name: example-mongo-srv
+  name: sample-service-mongo-srv
 spec:
   selector:
-    app: example-mongo
+    app: sample-service-mongo
   ports:
     - name: db
       protocol: TCP

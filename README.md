@@ -1,4 +1,8 @@
-# Bates Solutions Portfolio
+# Bates Solutions : Example - Service
+
+Microservices Application built with TypeScript, Express, Nats and Mongo
+
+Uses npm libraries `@bates-solutions/common` & `@bates-solutions/common-exmaple`
 
 ## Hosts files
 

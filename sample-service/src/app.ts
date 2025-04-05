@@ -8,8 +8,8 @@ import {
   currentUser,
 } from '@bates-solutions/common';
 
-import { indexExampleRouter } from './routes';
-import { protectedExampleRouter } from './routes/protected';
+import { indexSampleServiceRouter } from './routes';
+import { protectedSampleServiceRouter } from './routes/protected';
 
 const app = express();
 
@@ -24,8 +24,8 @@ app.use(
 );
 app.use(currentUser);
 
-app.use(indexExampleRouter);
-app.use(protectedExampleRouter);
+app.use(indexSampleServiceRouter);
+app.use(protectedSampleServiceRouter);
 
 app.all('*', async (req, res) => {
   throw new NotFoundError();
