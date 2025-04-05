@@ -1,4 +1,4 @@
-# Microservices Example
+# Microservices : Monorepo Example
 
 Microservices Application built with TypeScript, Express, Nats and Mongo
 
