@@ -140,7 +140,7 @@ Once your account is setup run `docker login` at the terminal to allow `docker p
 
 ### Github Actions
 
-If you fork, add this authentication to https://github.com/[ACCOUNT]/[REPO]/settings/secrets/actions
+These are needed for your repo's Actions https://github.com/[ACCOUNT]/[REPO]/settings/secrets/actions
 
 - Add `DOCKER_USERNAME` as a repository action variable
 - Add `DOCKER_PASSWORD` as a repository action secret
