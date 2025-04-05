@@ -150,3 +150,8 @@ These are needed for your repo's Actions https://github.com/[ACCOUNT]/[REPO]/set
 
 - Add `DOCKER_USERNAME` as a repository action variable
 - Add `DOCKER_PASSWORD` as a repository action secret
+
+## Acknowledgement
+
+The patterns I used here, and a lot of my understanding of these topics were learned in this execellent course https://www.udemy.com/course/microservices-with-node-js-and-react
+
