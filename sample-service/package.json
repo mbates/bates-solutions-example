@@ -7,6 +7,7 @@
     "push": "docker push batessolutions/example-sample-service",
     "publish": "npm run build && npm run push",
     "test": "jest --watchAll --no-cache --verbose",
+    "test:ci": "jest --verbose",
     "upgrade:common": "npm i @bates-solutions/common@latest && npm i @bates-solutions/common-example@latest"
   },
   "jest": {
