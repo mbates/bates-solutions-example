@@ -12,6 +12,8 @@ For local development add a local loopback to your computers hosts file
 
     127.0.0.1 example.local
 
+If you want to use an alternative domain, also update the `host` in `infrastructure/k8s-local/ingress-srv.yaml`
+
 ## Skaffold
 
 This project uses skaffold to manage the kubernetes cluster locally.
