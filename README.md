@@ -93,14 +93,6 @@ ingress-nginx-controller             LoadBalancer   10.101.175.179   localhost  
 ingress-nginx-controller-admission   ClusterIP      10.105.35.60     <none>        443/TCP                      46h
 ```
 
-The url to get to ingress-nginx from another pod is built like this
-
-http://[SERVICE].[NAMESPACE].svc.cluster.local
-
-For example:
-
-http://ingress-nginx.ingress.nginx.svc.cluster.local
-
 ## Nats Error
 
 If you get a Nats error like this when you run `skaffold dev`
