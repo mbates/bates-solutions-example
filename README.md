@@ -13,7 +13,7 @@ Once forked, update the npm and docker hub account names throughout the 2 codeba
 
 ## Monorepo
 
-This monorepo contains 2 projects `auth` & `sample-service`.
+This monorepo contains 2 projects, [auth](./auth/README.md) & [sample-service](./sample-service/README.md).
 
 Before you can skaffold the cluster, these projects need to be setup with `npm i`.
 
