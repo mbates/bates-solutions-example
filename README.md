@@ -32,6 +32,10 @@ https://www.docker.com/get-started/
 
 Once Docker Desktop is setup, the cluster can be stared with `skaffold dev` (see above)
 
+Install `kubectl` to manage things from your terminal
+
+https://kubernetes.io/docs/tasks/tools/
+
 ### Pods
 
 `kubectl get pods`
