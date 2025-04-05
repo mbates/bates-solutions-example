@@ -31,7 +31,7 @@ This project uses skaffold to manage the kubernetes cluster locally.
 
 See https://skaffold.dev for installation instructions.
 
-`skaffold dev` from project root to bring up the project, this assumes npm packages (common-example) and docker hub images have been published `npm run publish`
+`skaffold dev` from project root to bring up the project.
 
 ## Docker authentication
 
