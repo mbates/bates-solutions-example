@@ -2,13 +2,14 @@
 
 Microservices Application built with TypeScript, Express, Nats and Mongo
 
-Should be used in conjuction with https://github.com/mbates/bates-solutions-example-common which publishes an npm library `@bates-solutions/common-example`
+## Forking
 
-If you want to use this project yourself, fork both repositories and replace:
+If you want to for this for you own project, you'll also need to fork the accompanying npm repository https://github.com/mbates/bates-solutions-example-common
 
-`@bates-solutions` with your own npm account. Replace in all package.json files and all `import` lines in typescript files.
+You will need to update the npm and docker hub account names throughout the 2 codebases replacing:
 
-`batessolutions` with your own docker hub account. Replace in `package.json` scripts, `infrastructure/k8s/*.depl` files and main `skaffold.yam`l file
+- `@bates-solutions` with your own npm account. Replace in all package.json files and all `import` lines in typescript files.
+- `batessolutions` with your own docker hub account. Replace in `package.json` scripts, `infrastructure/k8s/*.depl` files and main `skaffold.yam`l file
 
 ## Monorepo
 
