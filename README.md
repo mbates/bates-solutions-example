@@ -64,7 +64,7 @@ nats-depl-6754898fbd-sgr4j         1/1     Running   0          2m3s
 
 `kubectl exec -it auth-depl-65bb4949bd-lgcrk -- sh`
 
-## Namespaces
+### Namespaces
 
 `kubectl get namespace`
 
