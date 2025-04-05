@@ -6,22 +6,17 @@ Should be used in conjuction with https://github.com/mbates/bates-solutions-exam
 
 If you want to use this project yourself, fork both repositories and replace:
 
-`@bates-solutions` with your own npm account. Replace in all package.json files and all `import`s in typescript files.
+`@bates-solutions` with your own npm account. Replace in all package.json files and all `import` lines in typescript files.
 
-`batessolutions` with your own docker hub account.Replease in `package.json` scripts, `infrastructure/k8s/*.depl` files and main `skaffold.yam`l file
+`batessolutions` with your own docker hub account. Replace in `package.json` scripts, `infrastructure/k8s/*.depl` files and main `skaffold.yam`l file
 
 ## Monorepo
 
 This monorepo contains 2 projects `auth` & `sample-service`.
 
-Before you can skaffold the cluster, these projects need to be built and published.
+Before you can skaffold the cluster, these projects need to be setup with `npm i`.
 
-If you fork and use this on your own project, you will be publishing to you own docker hub. Make sure you are not using `batessolutions/example-xxxx` for you container names
-
-```
-npm i
-npm run publish
-```
+(If you fork and use this on your own project, you will be publishing to you own docker hub. Make sure you are not using `batessolutions/example-xxxx` for you container names. You can publish with `npm run publish` once you've updated to your own account)
 
 ## Hosts files
 
