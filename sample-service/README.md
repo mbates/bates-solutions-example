@@ -2,17 +2,6 @@
 
 Simple service that responds to various example end points
 
-## Npm Scripts
-
-```
-"start": "ts-node-dev src/index.ts",
-"docker:build": "docker build -t batessolutions/example .",
-"docker:push": "docker push batessolutions/example",
-"docker:pub": "npm run docker:build && npm run docker:push",
-"test": "jest --watchAll --no-cache --verbose",
-"upgrade:common": "npm i @bates-solutions/common@latest && npm i @bates-solutions/common-example@latest"
-```
-
 ## End points
 
 ### Example

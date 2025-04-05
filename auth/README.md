@@ -2,17 +2,6 @@
 
 Simple authentication service that saves an email and password to a mongo database.
 
-## Npm Scripts
-
-```
-"start": "ts-node-dev src/index.ts",
-"build": "docker build -t batessolutions/example-auth .",
-"push": "docker push batessolutions/example-auth",
-"test": "jest --watchAll --no-cache --verbose",
-"test:ci": "jest --verbose",
-"upgrade:common": "npm i @bates-solutions/common@latest && npm i @bates-solutions/common-example@latest"
-```
-
 ## End points
 
 ### Signup
