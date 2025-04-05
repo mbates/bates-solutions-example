@@ -122,3 +122,27 @@ http://[SERVICE].[NAMESPACE].svc.cluster.local
 For example:
 
 http://ingress-nginx.ingress.nginx.svc.cluster.local
+
+## Nats Error
+
+If you get a Nats error like this when you run `skaffold dev`
+
+```
+[sample-service] NatsError: Could not connect to server: Error: getaddrinfo EAI_AGAIN nats-srv
+[sample-service]     at Socket.<anonymous> (/app/node_modules/nats/lib/nats.js:833:26)
+[sample-service]     at Socket.emit (node:events:507:28)
+[sample-service]     at emitErrorNT (node:internal/streams/destroy:170:8)
+[sample-service]     at emitErrorCloseNT (node:internal/streams/destroy:129:3)
+[sample-service]     at processTicksAndRejections (node:internal/process/task_queues:90:21) {
+[sample-service]   code: 'CONN_ERR',
+[sample-service]   chainedError: Error: getaddrinfo EAI_AGAIN nats-srv
+[sample-service]       at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:122:26) {
+[sample-service]     errno: -3001,
+[sample-service]     code: 'EAI_AGAIN',
+[sample-service]     syscall: 'getaddrinfo',
+[sample-service]     hostname: 'nats-srv'
+[sample-service]   }
+[sample-service] }
+```
+
+It is caused by sample service starting before Nats. Use docker desktop to delete the `k8s_sample-service_sample-service-depl-xxxx` container. It will restart and should connect to Nats successfully.
