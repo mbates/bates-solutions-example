@@ -11,4 +11,4 @@ router.get(
   }
 );
 
-export { router as protectedExampleRouter };
+export { router as protectedSampleServiceRouter };

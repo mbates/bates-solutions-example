@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: example-depl
+  name: sample-service-depl
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: example
+      app: sample-service
   template:
     metadata:
       labels:
-        app: example
+        app: sample-service
     spec:
       containers:
-        - name: example
-          image: batessolutions/example
+        - name: sample-service
+          image: batessolutions/example-sample-service
           env:
             - name: NATS_CLUSTER_ID
               value: profile
@@ -24,8 +24,6 @@ spec:
                   fieldPath: metadata.name
             - name: NATS_URL
               value: 'http://nats-srv:4222'
-            - name: MONGO_URI
-              value: 'mongodb://example-mongo-srv:27017/example'
             - name: JWT_KEY
               valueFrom:
                 secretKeyRef:
@@ -35,12 +33,12 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: example-srv
+  name: sample-service-srv
 spec:
   selector:
-    app: example
+    app: sample-service
   ports:
-    - name: example
+    - name: sample-service
       protocol: TCP
       port: 3000
       targetPort: 3000

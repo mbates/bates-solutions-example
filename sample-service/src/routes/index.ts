@@ -6,4 +6,4 @@ router.get('/api/example', async (req: Request, res: Response) => {
   res.send({});
 });
 
-export { router as indexExampleRouter };
+export { router as indexSampleServiceRouter };

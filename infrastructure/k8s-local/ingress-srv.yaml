@@ -10,11 +10,11 @@ spec:
     - host: example.local
       http:
         paths:
-          - path: /api/example/?(.*)
+          - path: /api/sample/?(.*)
             pathType: ImplementationSpecific
             backend:
               service:
-                name: example-srv
+                name: sample-service-srv
                 port:
                   number: 3000
           - path: /api/users/?(.*)

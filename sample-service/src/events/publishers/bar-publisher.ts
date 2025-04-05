@@ -4,6 +4,6 @@ import {
   FooBarEvent,
 } from '@bates-solutions/common-example';
 
-export class FooBarPublisher extends Publisher<FooBarEvent> {
+export class BarPublisher extends Publisher<FooBarEvent> {
   readonly subject = Subjects.FooBar;
 }

@@ -1,4 +1,4 @@
-# Bates Solutions Example
+# Bates Solutions : Example - Service
 
 Microservices Application built with TypeScript, Express, Nats and Mongo
 
